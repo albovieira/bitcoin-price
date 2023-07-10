@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Serverless
+.serverless
+
+# Serverless
+.github
+
+# Webpack
+.webpack
+
+# Output
+dist

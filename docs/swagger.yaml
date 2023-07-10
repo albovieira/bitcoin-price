@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3001
+  - url: http://ec2-34-238-119-22.compute-1.amazonaws.com:3001
+tags:
+  - name: General
+  - name: Prices
+paths:
+  /healthcheck:
+    get:
+      tags: 
+        - General
+      summary: Health Check
+      responses:
+        '200':
+          description: OK    
+  /prices/bitcoin:
+    get:
+      tags: 
+        - Prices
+      summary: Get Bitcoin Price
+      responses:
+        '200':
+          description: OK
+          
